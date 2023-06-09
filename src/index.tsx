@@ -24,6 +24,6 @@ const EasyUuid = EasyUuidModule
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return EasyUuid.multiply(a, b);
+export function uuid(): string {
+  return EasyUuid.uuid();
 }

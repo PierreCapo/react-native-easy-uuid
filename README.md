@@ -1,22 +1,32 @@
 # react-native-easy-uuid
 
-Get uuid from native platforms. Zero Dependency.
+Get uuid from **native code**.
+Zero Dependency. Tiny.
+Typescript typings.
+
+Compatible with both old arch and TurboModules
 
 ## Installation
 
 ```sh
-npm install react-native-easy-uuid
+yarn add react-native-easy-uuid && npx pod-install
 ```
 
 ## Usage
 
 ```js
-import { multiply } from 'react-native-easy-uuid';
+import { uuid } from 'react-native-easy-uuid';
 
 // ...
 
-const result = await multiply(3, 7);
+console.log(uuid()); // F987E967-A5B4-46D2-A94D-8D2319C7B531
 ```
+
+## Troubleshooting
+The library is exposing synchronous methods which prevents using the Google Chrome debugger.
+See these links for more information:
+- https://reactnative.dev/docs/native-modules-android#synchronous-methods
+- https://reactnative.dev/docs/native-modules-ios#synchronous-methods
 
 ## Contributing
 

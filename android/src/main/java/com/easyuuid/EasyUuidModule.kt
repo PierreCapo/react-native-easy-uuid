@@ -2,7 +2,7 @@ package com.easyuuid
 
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.bridge.ReactMethod
-import com.facebook.react.bridge.Promise
+import java.util.UUID;
 
 class EasyUuidModule internal constructor(context: ReactApplicationContext) :
   EasyUuidSpec(context) {
@@ -13,9 +13,9 @@ class EasyUuidModule internal constructor(context: ReactApplicationContext) :
 
   // Example method
   // See https://reactnative.dev/docs/native-modules-android
-  @ReactMethod
-  override fun multiply(a: Double, b: Double, promise: Promise) {
-    promise.resolve(a * b)
+  @ReactMethod(isBlockingSynchronousMethod = true)
+  override fun uuid(): String {
+    return UUID.randomUUID().toString()
   }
 
   companion object {
