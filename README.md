@@ -1,6 +1,6 @@
 # react-native-easy-uuid
 
-Library to provide native uuids
+Library to provide native uuids. 2.0.0+ supports TurboModules/New Arch only.
 
 ## Installation
 
@@ -12,11 +12,11 @@ npm install react-native-easy-uuid
 
 
 ```js
-import { multiply } from 'react-native-easy-uuid';
+import { uuid } from 'react-native-easy-uuid';
 
 // ...
 
-const result = multiply(3, 7);
+const result = uuid();
 ```
 
 

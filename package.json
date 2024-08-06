@@ -1,6 +1,6 @@
 {
   "name": "react-native-easy-uuid",
-  "version": "0.1.0",
+  "version": "2.1.0",
   "description": "Library to provide native uuids",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
