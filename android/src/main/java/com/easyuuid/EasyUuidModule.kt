@@ -2,6 +2,7 @@ package com.easyuuid
 
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.module.annotations.ReactModule
+import java.util.UUID
 
 @ReactModule(name = EasyUuidModule.NAME)
 class EasyUuidModule(reactContext: ReactApplicationContext) :
